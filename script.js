@@ -1,4 +1,5 @@
-// TODO(you): Write the JavaScript necessary to complete the homework.
-
-// You can access the RESULTS_MAP from "constants.js" in this file since
-// "constants.js" has been included before "script.js" in index.html.
+function onClickListener()
+{
+	  document.getElementById("img-item").style="background-color:#cfe3ff;";
+	  document.getElementById("img-item1-1").src="images/checked.png";
+}

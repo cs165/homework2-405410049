@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-  <!-- TODO(you): Make whatever changes needed to complete the homework! -->
-
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Adopt A Dog And We'll Reveal A Deep Truth About You</title>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
@@ -18,7 +16,7 @@
   <body>
     <article>
       <header>
-          <h1>4102165</h1>
+          <h1>CS193x</h1>
           <div>
             <span>YAY</span>
             <span>INT</span>
@@ -29,7 +27,7 @@
       <h1>Adopt A Dog And We'll Reveal A Deep Truth About You</h1>
       <p>This is your pupper of truth.</p>
       <p id="author">
-        By fullstackccu
+        By Amy Xu and Zach Maurer
       </p>
 
       <section class="question-name">
@@ -37,48 +35,47 @@
       </section>
 
       <section class="choice-grid">
-        <div data-choice-id="blep" data-question-id="one">
-          <img src="images/blepdog.jpg"/>
+        <div data-choice-id="blep" data-question-id="one" class="flex-item" onmousedown="onClickListener()" id="img-item">
+          <img src="images/blepdog.jpg" width="100%"/><br>
+          <img class="checkbox" src="images/unchecked.png"/ id="img-item1-1">
+        </div>
+
+        <div data-choice-id="happy" data-question-id="one" class="flex-item">
+          <img src="./images/happydog.jpg" width="100%"/><br>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="happy" data-question-id="one">
-          <img src="./images/happydog.jpg"/>
+        <div data-choice-id="sleeping" data-question-id="one" class="flex-item">
+          <img src="./images/sleepingdog.jpg" width="100%"/><br>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+        <div data-choice-id="dopey" data-question-id="one" class="flex-item">
+          <img src="./images/dopeydog.jpg"/ width="100%">
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="sleeping" data-question-id="one">
-          <img src="./images/sleepingdog.jpg"/>
+        <div data-choice-id="burger" data-question-id="one" class="flex-item">
+          <img src="./images/burgerdog.jpg"/ width="100%">
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="dopey" data-question-id="one">
-          <img src="./images/dopeydog.jpg"/>
+        <div data-choice-id="cart" data-question-id="one" class="flex-item">
+          <img src="./images/cartdog.jpg"/ width="100%">
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="burger" data-question-id="one">
-          <img src="./images/burgerdog.jpg"/>
+        <div data-choice-id="nerd" data-question-id="one" class="flex-item">
+          <img src="./images/nerddog.jpg"/ width="100%">
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="cart" data-question-id="one">
-          <img src="./images/cartdog.jpg"/>
+        <div data-choice-id="shy" data-question-id="one" class="flex-item">
+          <img src="./images/shydog.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="nerd" data-question-id="one">
-          <img src="./images/nerddog.jpg"/>
-          <img class="checkbox" src="images/unchecked.png"/>
-        </div>
-
-        <div data-choice-id="shy" data-question-id="one">
-          <img src="./images/shydog.jpg"/>
-          <img class="checkbox" src="images/unchecked.png"/>
-        </div>
-
-        <div data-choice-id="sleepy" data-question-id="one">
-          <img src="./images/sleepydog.jpg"/>
+        <div data-choice-id="sleepy" data-question-id="one" class="flex-item">
+          <img src="./images/sleepydog.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
       </section>
@@ -88,48 +85,48 @@
       </section>
 
       <section class="choice-grid">
-        <div data-choice-id="blep" data-question-id="two">
-          <img src="images/blepbed.jpg"/>
+        <div data-choice-id="blep" data-question-id="two" class="flex-item">
+          <img src="images/blepbed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="happy" data-question-id="two">
-          <img src="./images/happybed.jpg"/>
+        <div data-choice-id="happy" data-question-id="two" class="flex-item">
+          <img src="./images/happybed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="sleeping" data-question-id="two">
-          <img src="./images/sleepingbed.jpg"/>
+        <div data-choice-id="sleeping" data-question-id="two" class="flex-item">
+          <img src="./images/sleepingbed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="dopey" data-question-id="two">
-          <img src="./images/dopeybed.jpg"/>
+        <div data-choice-id="dopey" data-question-id="two" class="flex-item">
+          <img src="./images/dopeybed.jpg" width="100%"/>
+          <img class="checkbox" src="images/unchecked.png"/ >
+        </div>
+
+        <div data-choice-id="burger" data-question-id="two" class="flex-item">
+          <img src="./images/burgerbed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="burger" data-question-id="two">
-          <img src="./images/burgerbed.jpg"/>
+        <div data-choice-id="cart" data-question-id="two" class="flex-item">
+          <img src="./images/cartbed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="cart" data-question-id="two">
-          <img src="./images/cartbed.jpg"/>
+        <div data-choice-id="nerd" data-question-id="two" class="flex-item">
+          <img src="./images/nerdbed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="nerd" data-question-id="two">
-          <img src="./images/nerdbed.jpg"/>
+        <div data-choice-id="shy" data-question-id="two" class="flex-item">
+          <img src="./images/shybed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="shy" data-question-id="two">
-          <img src="./images/shybed.jpg"/>
-          <img class="checkbox" src="images/unchecked.png"/>
-        </div>
-
-        <div data-choice-id="sleepy" data-question-id="two">
-          <img src="./images/sleepybed.jpg"/>
+        <div data-choice-id="sleepy" data-question-id="two" class="flex-item">
+          <img src="./images/sleepybed.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
       </section>
@@ -139,48 +136,48 @@
       </section>
 
       <section class="choice-grid">
-        <div data-choice-id="blep" data-question-id="three">
-          <img src="images/bleptoy.jpg"/>
+        <div data-choice-id="blep" data-question-id="three" class="flex-item">
+          <img src="images/bleptoy.jpg"/ width="100%">
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="happy" data-question-id="three">
-          <img src="./images/happytoy.jpg"/>
+        <div data-choice-id="happy" data-question-id="three" class="flex-item">
+          <img src="./images/happytoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="sleeping" data-question-id="three">
-          <img src="./images/sleepingtoy.jpg"/>
+        <div data-choice-id="sleeping" data-question-id="three"  class="flex-item">
+          <img src="./images/sleepingtoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="dopey" data-question-id="three">
-          <img src="./images/dopeytoy.jpg"/>
+        <div data-choice-id="dopey" data-question-id="three"  class="flex-item">
+          <img src="./images/dopeytoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="burger" data-question-id="three">
-          <img src="./images/burgertoy.jpg"/>
+        <div data-choice-id="burger" data-question-id="three"  class="flex-item">
+          <img src="./images/burgertoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="cart" data-question-id="three">
-          <img src="./images/carttoy.jpg"/>
+        <div data-choice-id="cart" data-question-id="three"  class="flex-item">
+          <img src="./images/carttoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="nerd" data-question-id="three">
-          <img src="./images/nerdtoy.jpg"/>
+        <div data-choice-id="nerd" data-question-id="three"  class="flex-item">
+          <img src="./images/nerdtoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="shy" data-question-id="three">
-          <img src="./images/shytoy.jpg"/>
+        <div data-choice-id="shy" data-question-id="three"  class="flex-item">
+          <img src="./images/shytoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
 
-        <div data-choice-id="sleepy" data-question-id="three">
-          <img src="./images/sleepytoy.jpg"/>
+        <div data-choice-id="sleepy" data-question-id="three"  class="flex-item">
+          <img src="./images/sleepytoy.jpg" width="100%"/>
           <img class="checkbox" src="images/unchecked.png"/>
         </div>
       </section>
