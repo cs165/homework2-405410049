@@ -28,3 +28,17 @@
 @media screen and (max-width:500px){
 	.flex-item{width:49%;}
 }
+.restart-box{
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:40px;
+}
+.unchosen{
+	opacity: 0.6;
+	
+}
+.chosen{
+	background-color:#cfe3ff;
+	opacity:1;
+}
