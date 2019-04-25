@@ -42,3 +42,14 @@
 	background-color:#cfe3ff;
 	opacity:1;
 }
+.restart-box{
+	margin:20px;
+}
+button{
+	background-color:#cecece;
+	height:50px;
+	width:100%;
+}
+button:hover{
+	background-color:#e0e0e0;
+}
